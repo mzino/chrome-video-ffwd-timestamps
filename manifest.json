@@ -1,0 +1,13 @@
+{
+   "manifest_version": 2,
+   "name": "YouTube FFWD Timestamps",
+   "version": "1.0",
+   "description": "Shows correct timestamp for 1.75 speed in Watch Later",
+   "content_scripts": [
+      {
+         "matches": [ "https://www.youtube.com/playlist?list=WL" ],
+         "js": [ "jquery.min.js", "main.js" ]
+      }
+   ],
+   "permissions": [ "tabs", "https://www.youtube.com/playlist?list=WL" ]
+}
