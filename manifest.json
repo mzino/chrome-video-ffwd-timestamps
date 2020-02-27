@@ -1,13 +1,14 @@
 {
-   "manifest_version": 2,
-   "name": "YouTube FFWD Timestamps",
-   "version": "1.0",
-   "description": "Shows correct timestamp for 1.75 speed in Watch Later",
-   "content_scripts": [
-      {
-         "matches": [ "https://www.youtube.com/playlist?list=WL" ],
-         "js": [ "jquery.min.js", "main.js" ]
-      }
-   ],
-   "permissions": [ "tabs", "https://www.youtube.com/playlist?list=WL" ]
+  "manifest_version": 2,
+  "name": "Video FFWD duration",
+  "version": "1.1",
+  "description": "Shows correct duration for 1.75x speed in Watch Later",
+  "homepage_url": "https://github.com/mzino/youtube-ffwd-timestamps",
+  "permissions": [ "https://www.youtube.com/playlist?list=WL" ],
+  "content_scripts": [
+    {
+      "matches": [ "https://www.youtube.com/playlist?list=WL" ],
+      "js": [ "jquery-3.4.1.slim.min.js", "main.js" ]
+    }
+  ]
 }
